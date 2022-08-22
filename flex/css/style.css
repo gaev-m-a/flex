@@ -1,0 +1,314 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/*--------------------*/
+
+body {
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.content__row {
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.header__row {
+    justify-content: space-between;
+}
+
+.header__column:first-child {
+    padding: 0 30px 0 0;
+}
+
+.header {
+    background-color: #445162;
+    color: #ffffff;
+    padding: 50px;
+    font-weight: 400;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.header__title {
+    font-size: 60px;
+    line-height: 1.2;
+    margin: 0 0 40px 0;
+}
+
+.header__list li::before {
+    content: url('/img/tick.png');
+    padding: 0 10px 0 0;
+}
+
+.header__list {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.header__img {
+    width: 30%;
+    max-width: 469px;
+    background-color: #ffffff;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding: 23px;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex: 1 1 100%;
+}
+
+.what__row {
+    padding: 50px;
+}
+
+.what__image {
+    max-width: 430px;
+    margin: 0 40px 0 0;
+}
+
+.content__title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+}
+
+.what__title {
+    margin-bottom: 26px;
+}
+
+.what__text p {
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 26px;
+}
+
+.what__text p:last-child {
+    margin-bottom: 0;
+}
+
+.col {
+    background-color: #f5f5f5;
+    padding: 50px;
+}
+
+.col__row {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.col__column {
+    flex: 0 1 50%;
+}
+
+@media (max-width: 940px) {
+    .col__column {
+        flex: 0 1 100%;
+    }
+
+    .what__row,
+    .header__row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .vertical__row {
+        flex-direction: column;
+        max-width: 300px;
+    }
+}
+
+.col__title, .vertical__title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.col__item {
+    padding: 15px;
+}
+
+.item__column img {
+    margin-right: 15px;
+}
+
+.item__title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #445161;
+}
+
+.item__text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.interaction {
+    background-color: #445162;
+    border: 2px solid #445162;
+    border-radius: 8px;
+    text-align: center;
+    margin: 22.5px;
+    padding-bottom: 20px;
+    display: flex;
+    
+}
+
+.interaction__row {
+    flex-direction: column;
+}
+
+.vertical {
+    padding: 50px;
+}
+
+.vertical__column {
+    flex: 0 1 33%;
+    display: flex;
+}
+
+.interaction__happy {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 15px;
+}
+
+.interaction__type {
+    padding: 20px;
+    background-color: #fff;
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #445162;
+}
+
+.interaction__text {
+    padding: 20px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    flex: 1 0 auto;
+}
+
+.interaction__btn {
+    margin: auto;
+    width: 260px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #445161;
+}
